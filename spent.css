@@ -50,16 +50,17 @@ header {
     text-align: center;
     margin: 0;
     text-decoration: none;
+    transition: 0.7s ease;
 }
 
 .item:hover,
 .item1:hover {
-    background-color: #4f8355;
-    transition: background-color 0.7s ease-in-out;
+    background-color: #ffffff;
+    color: #000;
 }
 
 .item1 {
-    background-color: #2b99ff;
+    background-color: #4f8355;
     font-weight: bold;
 }
 
@@ -86,7 +87,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 80px;
-    gap: 40px; /* espaço entre slider e infojogo */
     color: #ffffff;
     margin: 0px 100px 70px 100px;
     border-radius: 30px;
@@ -94,10 +94,10 @@ header {
 
 .linha {
     z-index: 3;
-    width: 710px;
+    width: 550px;
     pointer-events: none;
     position: absolute;
-    translate: -200px 0px;
+    translate: -30px 0px;
     border: 2px solid #ffffff;
 }
 
@@ -105,8 +105,6 @@ header {
     align-self: center;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    flex: 1; /* permite que a área de texto ocupe o espaço restante */
 }
 
 .infojogo h2 {
@@ -136,18 +134,18 @@ header {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: 0.5s ease;
     text-decoration: none;
     margin: 30px 0px 30px 0px;
 }
 
 .saibamais:hover {
-    background-color: #2b99ff;
+    background-color: #ffffff;
+    color: #000;
 }
 
 .slider {
     width: 900px;
-    flex: 0 0 900px; /* fixa a largura do slider dentro do flex container */
 }
 
 .principal {
@@ -225,10 +223,11 @@ header {
     padding: 20px;
 }
 
+
 footer {
     width: 100%;
     height: 190px;
-    background-color: #2b99ff;
+    background-color: #4f8355;
     font-weight: bold;
     color: #fff;
     font-size: 18px;

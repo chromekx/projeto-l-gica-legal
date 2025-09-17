@@ -25,7 +25,6 @@ header {
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
-    position: sticky;
 }
 
 .titulo {
@@ -54,11 +53,11 @@ header {
     text-align: center;
     margin: 0;
     text-decoration: none;
+    transition: 0.5s ease;
 }
 
 .item:hover, .item1:hover {
     background-color: #1f5afc;
-    transition: background-color 0.7s ease-in-out;
 }
 
 .item1 {
@@ -202,11 +201,10 @@ span.carousel-control-next-icon {
 .quadradojogo {
     width: 700px;
     height: 450px;
-    background-color: #4f8355;
     position: absolute;
     pointer-events: none;
     translate: -40px 70px;
-    transition: background-color 0.35s ease, transform 0.35s ease, opacity 0.35s ease;
+    transition: 0.35s ease;
     border-radius: 2px;
 }
 
@@ -217,7 +215,7 @@ span.carousel-control-next-icon {
     right: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: 0.3s ease;
     background-color: #000000;
     color: #ffffff;
     font-size: 18px;

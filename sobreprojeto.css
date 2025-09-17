@@ -56,11 +56,11 @@ header {
     text-align: center;
     margin: 0;
     text-decoration: none;
+    transition: 0.5s ease;
 }
 
 .item:hover, .item1:hover {
-    background-color: #4f8355;
-    transition: background-color 0.7s ease-in-out;
+    background-color: #0535ff;
 }
 
 .item1 {
@@ -173,7 +173,7 @@ section {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #4f8355;
+    background-color: #0535ff;
     margin: 0 auto 20px;
     display: flex;
     align-items: center;

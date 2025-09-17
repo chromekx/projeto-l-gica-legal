@@ -1,5 +1,5 @@
 :root {
-    --primary-blue: #4f8355;
+    --primary-blue: #0535ff;
     --secondary-blue: #2b99ff;
     --dark-bg: #0a0a1a;
     --light-text: #ffffff;
@@ -48,12 +48,12 @@ header {
     text-align: center;
     margin: 0;
     text-decoration: none;
+    transition: 0.5s ease;
 }
 
 .item:hover,
 .item1:hover {
-    background-color: #4f8355;
-    transition: background-color 0.7s ease-in-out;
+    background-color: #0535ff;
 }
 
 .item1 {
@@ -139,7 +139,7 @@ section {
     right: -2px;
     bottom: -2px;
     z-index: -1;
-    background: linear-gradient(45deg, #69b471, transparent);
+    background: linear-gradient(45deg, #bababa, transparent);
     border-radius: 16px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -260,8 +260,8 @@ button.accordion-button.collapsed::after {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #60c5572c;
-    color: #a3c2a7;
+    background-color: #121d49;
+    color: #5d93ff;
 }
 
 .accordion-button::after {
@@ -277,14 +277,14 @@ button.accordion-button.collapsed::after {
 .accordion-button:not(.collapsed)::after {
     content: '-';
     transform: translateY(-50%) rotate(0deg);
-    color: #4f8355;
+    color: #0535ff;
 }
 
 .accordion-body {
     padding: 20px;
     color: #ffffffcc;
     line-height: 1.6;
-    border-top: 1px solid #4f8355;
+    border-top: 1px solid #0535ff;
 }
 
 .contact-section {

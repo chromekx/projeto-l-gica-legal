@@ -84,8 +84,7 @@ header {
 
 .linha {
     border-top: 4px solid #000000;
-    z-index: 3;
-    width: 620px;
+    width: 540px;
     pointer-events: none;
     position: relative;
     margin-bottom: 60px;

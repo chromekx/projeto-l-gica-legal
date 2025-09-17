@@ -38,15 +38,16 @@ header {
   padding: 25px 0;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.7s ease-in-out;
+  transition: 0.5s ease;
 }
 
 .item:hover, .item1:hover {
-  background-color: #1f5afc;
+  background-color: #ffffff;
+  color: #000;
 }
 
 .item1 {
-  background-color: #2b99ff;
+  background-color: #4f8355;
   font-weight: bold;
 }
 
@@ -69,7 +70,7 @@ header {
 .container1 {
   background-color: #111111;
   padding: 100px;
-  background-image: url('images/fundolglvazio.jpg');
+  background-image: url('images/fundolglvazio4.png');
   object-fit: fill;
 }
 

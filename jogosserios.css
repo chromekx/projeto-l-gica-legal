@@ -42,7 +42,7 @@ header {
 }
 
 .item:hover, .item1:hover {
-  background-color: #4f8355;
+  background-color: #1f5afc;
 }
 
 .item1 {
@@ -69,7 +69,7 @@ header {
 .container1 {
   background-color: #111111;
   padding: 100px;
-  background-image: url('images/fundolglvazio4.png');
+  background-image: url('images/fundolglvazio.jpg');
   object-fit: fill;
 }
 

@@ -53,7 +53,7 @@ header {
 
 .item:hover,
 .item1:hover {
-    background-color: #0535ff;
+    background-color: #1f5afc;
 }
 
 .item1 {
@@ -139,7 +139,7 @@ section {
     right: -2px;
     bottom: -2px;
     z-index: -1;
-    background: linear-gradient(45deg, #bababa, transparent);
+    background: linear-gradient(45deg, #1f5afc, transparent);
     border-radius: 16px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -277,14 +277,14 @@ button.accordion-button.collapsed::after {
 .accordion-button:not(.collapsed)::after {
     content: '-';
     transform: translateY(-50%) rotate(0deg);
-    color: #0535ff;
+    color: #1f5afc;
 }
 
 .accordion-body {
     padding: 20px;
     color: #ffffffcc;
     line-height: 1.6;
-    border-top: 1px solid #0535ff;
+    border-top: 1px solid #1f5afc;
 }
 
 .contact-section {

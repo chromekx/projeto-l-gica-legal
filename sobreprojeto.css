@@ -60,7 +60,7 @@ header {
 }
 
 .item:hover, .item1:hover {
-    background-color: #0535ff;
+    background-color: #1f5afc;
 }
 
 .item1 {
@@ -173,7 +173,7 @@ section {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #0535ff;
+    background-color: #1f5afc;
     margin: 0 auto 20px;
     display: flex;
     align-items: center;

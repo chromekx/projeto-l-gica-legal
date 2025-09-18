@@ -49,7 +49,7 @@ header {
 }
 
 .item1 {
-  background-color: #6545d8;
+  background-color: #541dc1;
   font-weight: bold;
 }
 
@@ -189,6 +189,6 @@ footer p {
 }
 
 .redesfooter a:hover {
-  color: #2b99ff;
+  color: #541dc1;
   transform: scale(1.25);
 }

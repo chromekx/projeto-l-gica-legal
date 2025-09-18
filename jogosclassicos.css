@@ -39,16 +39,17 @@ header {
   padding: 25px 0;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.7s ease-in-out;
+  transition: 0.5s ease;
 }
 
 .item:hover,
 .item1:hover {
-  background-color: #4f8355;
+  background-color: #ffffff;
+  color: #000;
 }
 
 .item1 {
-  background-color: #2b99ff;
+  background-color: #6545d8;
   font-weight: bold;
 }
 
@@ -71,7 +72,7 @@ header {
 .container1 {
   background-color: #e7e7e7;
   padding: 100px;
-  background-image: url('images/fundolglvazio1.png');
+  background-image: url('images/fundolglvazio6.png');
 }
 
 .carousel-container {

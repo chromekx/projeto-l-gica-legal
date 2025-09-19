@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <img src="images/logolgl3.png" alt="Logo" class="logo">
+    <div class="logo"></div>
     <div class="quadrado"></div>
 
     <section class="container1">
@@ -62,7 +62,8 @@
                                 os torna fáceis de aprender, mas difíceis de dominar.</p>
                         </div>
 
-                        <img src="images/jogosclassicos.png" alt="Foto 1" class="d-block_w-100" style="height: 910px; margin-top: -4px;">
+                        <img src="images/jogosclassicos.png" alt="Foto 1" class="d-block_w-100"
+                            style="height: 910px; margin-top: -4px;">
                     </div>
                 </div>
 
@@ -80,7 +81,8 @@
                                 de desenvolvimento pessoal, social e profissional.
                             </p>
                         </div>
-                        <img src="images/jogosserios.png" alt="Foto 2" class="d-block_w-100" style="height: 900px; margin-top: -4px;">
+                        <img src="images/jogosserios.png" alt="Foto 2" class="d-block_w-100"
+                            style="height: 900px; margin-top: -4px;">
                     </div>
                 </div>
 
@@ -89,13 +91,17 @@
                     <div class="inner">
                         <div class="textbox">
                             <h1>Nossos Objetivos</h1>
-                            <p>O objetivo do nosso projeto é programar um site funcional e acessível, que reúna jogos clássicos e jogos
-                                sérios. Foi necessário desenvolver uma pesquisa acadêmica fundamentada sobre os benefícios e
+                            <p>O objetivo do nosso projeto é programar um site funcional e acessível, que reúna jogos
+                                clássicos e jogos
+                                sérios. Foi necessário desenvolver uma pesquisa acadêmica fundamentada sobre os
+                                benefícios e
                                 aplicações dos jogos clássicos e sérios no contexto educacional e social e realizar uma
-                                curadoria de jogos freeware (gratuitos) que possam ser integrados ao site, respeitando licenças e direitos
+                                curadoria de jogos freeware (gratuitos) que possam ser integrados ao site, respeitando
+                                licenças e direitos
                                 de uso.
                         </div>
-                        <img src="images/fundolgl.png" alt="Foto 3" class="d-block_w-100" style="height: 855px; margin-top: -4px;">
+                        <img src="images/fundolgl.png" alt="Foto 3" class="d-block_w-100"
+                            style="height: 855px; margin-top: -4px;">
                     </div>
                 </div>
             </div>
@@ -109,18 +115,24 @@
 
     <section class="container2">
         <div class="linhajogo" id="categorias"></div>
-        <h1 class="titleclassico">Jogos Clássicos</h1>
+        <div class="titles">
+
+
+        </div>
         <div class="jogos">
             <div class="jogoclassico" id="jogoclassico">
-                <div class="quadradojogo" style="background-color: #531cbe; background-image: url(images/fundolglvazio6.png)"></div>
+                <h1 class="titleclassico" style="font-weight: bold; color: #fff;">Jogos Clássicos</h1>
+                <div class="quadradojogo" style="background-image: url(images/fundolglvazio6.png);"></div>
                 <div class="jogocontent" style="background-image: url(images/tetris.jpg); border-radius: 2px;">
                     <div class="info">
                         <p>Clique para abrir nosso catálogo de Jogos Clássicos.</p>
                     </div>
                 </div>
             </div>
+
             <div class="jogoserio" id="jogoserio">
-                <div class="quadradojogo" style="background-color: #4f8355; background-image: url(images/fundolglvazio4.png)"></div>
+                <h1 class="titleserio" style="font-weight: bold; color: #fff; text-align: right;">Jogos Sérios</h1>
+                <div class="quadradojogo" style="background-image: url(images/fundolglvazio4.png);"></div>
                 <div class="jogocontent" style="background-image: url(images/geo.png); border-radius: 2px;">
                     <div class="info">
                         <p>Clique para abrir nosso catálogo de Jogos Sérios.</p>
@@ -128,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <h1 class="titleserio">Jogos Sérios</h1>
+
     </section>
 
     <footer>
@@ -143,7 +155,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script>
         document.querySelector('#jogoclassico').style.cursor = 'pointer';
         document.querySelector('#jogoclassico').onclick = function () {

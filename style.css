@@ -237,9 +237,8 @@ span.carousel-control-next-icon {
 }
 
 .titleserio {
-    translate: 1060px 70px;
-    position: absolute;
     font-weight: bold;
+    text-align: right;
 }
 
 footer {

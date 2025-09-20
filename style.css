@@ -55,6 +55,7 @@ header {
     margin: 0;
     text-decoration: none;
     transition: 0.5s ease;
+    text-wrap: nowrap;
 }
 
 .item:hover,
@@ -65,6 +66,15 @@ header {
 .item1 {
     background-color: #2b99ff;
     font-weight: bold;
+}
+
+.icon {
+    display: none;
+    font-size: 30px;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 .logo {
@@ -92,7 +102,6 @@ header {
     border-top: 4px solid #000000;
     width: 540px;
     pointer-events: none;
-    position: relative;
     margin-bottom: 60px;
     top: 130px;
 }
@@ -144,6 +153,7 @@ span.carousel-control-next-icon {
 
 .textbox p {
     font-size: 17px;
+    text-wrap: wrap;
 }
 
 .textbox {
@@ -151,6 +161,7 @@ span.carousel-control-next-icon {
 }
 
 .inner {
+    margin-top: 60px;
     color: #3d3d3d;
     display: flex;
     justify-content: space-between;
@@ -335,18 +346,19 @@ footer p {
 
 @media (max-width: 1440px) {
     .carousel-inner {
-        background-color: #c0a9a9;
         transform: scale(85%);
         top: -72px;
     }
 
-    #demo.carousel.slide, .container1 {
+    #demo.carousel.slide,
+    .container1 {
         height: 800px;
     }
-        
+
     .carousel-control-prev {
         left: -60px;
     }
+
     .carousel-control-next {
         right: -60px;
     }
@@ -356,11 +368,147 @@ footer p {
         translate: -60px -20px;
     }
 
-    .jogoclassico, .jogoserio {
+    .jogoclassico,
+    .jogoserio {
         transform: scale(90%);
     }
 
     .container2 {
         padding: 180px 150px 150px 150px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .carousel-inner {
+        transform: scale(75%);
+        top: -120px;
+    }
+
+    #demo.carousel.slide,
+    .container1 {
+        height: 700px;
+    }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+
+    .carousel-control-next {
+        right: 10px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: -330px;
+    }
+
+    header {
+        margin-bottom: 300px;
+    }
+
+    .logolegal {
+        transform: scale(80%);
+        translate: -110px -5px;
+    }
+
+    .jogoclassico,
+    .jogoserio {
+        transform: scale(85%);
+    }
+
+    .container2 {
+        padding: 180px 150px 140px 150px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .carousel-inner {
+        transform: scale(75%);
+        top: -120px;
+    }
+
+    #demo.carousel.slide,
+    .container1 {
+        width: auto !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 300px;
+    }
+
+    .logolegal {
+        transform: scale(80%);
+        translate: -110px -5px;
+    }
+
+    .jogoclassico,
+    .jogoserio {
+        transform: scale(85%);
+    }
+
+    .container2 {
+        padding: 180px 150px 140px 150px;
+    }
+
+    .carousel-item.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        /* necessário para posicionar o menu internamente */
+        z-index: 10;
+    }
+
+    .items {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column-reverse;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        background: #000000;
+        z-index: 20;
+        /* garante que fique acima da imagem */
+    }
+
+    #menu:checked~.items {
+        max-height: 500px;
+    }
+
+    .item,
+    .item1 {
+        width: 100%;
+        padding: 23px;
+        margin: 0;
+        border-top: 1px solid #fff;
+        text-align: center;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        font-size: 40px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 30;
+    }
+
+    .titulo {
+        padding: 8px;
+        display: flex;
+        font-size: 35px;
     }
 }
